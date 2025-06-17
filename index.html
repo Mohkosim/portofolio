@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>TechDesain - Portfolio</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark px-5">
+            <a class="navbar-brand d-flex align-items-center gap-3 ps-5" href="#">
+                <img src="./img/Techdesain 2.png" alt="TechDesain" class="logo-img ps-5">
+                <span class="brand-text">TechDesain</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggleBtn">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-4">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex">
+        <div class="intro-text">
+            <h1>Moh. Kosim</h1>
+            <h3>And I'm a <span class="highlight">Frontend Developer</span></h3>
+            <p>
+                Dengan keahlian di HTML, CSS, JavaScript, Tailwind, dan Bootstrap.
+                Berpengalaman dalam kerja tim melalui program Project Based Learning (PBL),
+                saya terlibat langsung dalam pembuatan dan presentasi aplikasi setiap akhir semester.
+                Fokus saya adalah membangun antarmuka web yang menarik, responsif, dan fungsional.
+            </p>
+            <div class="mt-4 d-flex gap-3">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/moh-kosim-2064892b7/" target="_blank" aria-label="LinkedIn"
+                    class="text-decoration-none text-light fs-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <!-- Gmail (Email) -->
+                <a href="mailto:mohkosim8014@gmail.com" aria-label="Email" class="text-decoration-none text-light fs-4">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Mohkosim" target="_blank" aria-label="GitHub"
+                    class="text-decoration-none text-light fs-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="mt-4 intro-buttons">
+                <a href="./download/CV Moh.Kosim.pdf" class="btn btn-custom btn-download" role="button"
+                    aria-label="Download CV">Download CV</a>
+                <a href="#portfolio" class="btn btn-custom btn-portfolio" role="button"
+                    aria-label="See Portfolio">Portfolio</a>
+            </div>
+        </div>
+        <div class="profile-hex" aria-label="Profile picture of Moh. Kosim">
+            <img src="./img/portofolio.png" />
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-2">
+            <div class="profile-card">
+                <img src="./img/XIITKJ200023.JPG" />
+                <h3>Moh. Kosim</h3>
+                <small>Frontend Developer</small>
+                <small>Backend Developer</small>
+                <small>Graphic Designer</small>
+            </div>
+
+            <div class="education-tabs">
+                <nav class="d-flex justify-content-center mb-3" role="tablist" aria-label="Education Qualification Tabs"
+                    id="educationTabs">
+                    <a class="px-3 py-2 active" role="tab" id="edu-qual-tab" data-tab="qual" tabindex="0"
+                        aria-selected="true" aria-controls="qualPanel">Pendidikan</a>
+                    <a class="px-3 py-2" role="tab" id="edu-course-tab" data-tab="course" tabindex="-1"
+                        aria-selected="false" aria-controls="coursePanel">Pengalaman</a>
+                    <a class="px-3 py-2" role="tab" id="edu-exp-tab" data-tab="exp" tabindex="-1" aria-selected="false"
+                        aria-controls="expPanel">Organisasi</a>
+                    <a class="px-3 py-2" role="tab" id="edu-details-tab" data-tab="details" tabindex="-1"
+                        aria-selected="false" aria-controls="detailsPanel">Sertifikat</a>
+                </nav>
+                <div class="education-content" id="educationContent" tabindex="0">
+                    <!-- Default content -->
+                    <div id="qualPanel" role="tabpanel" aria-labelledby="edu-qual-tab" tabindex="0">
+                        <p>
+                            <strong>Politeknik Negeri Banyuwangi</strong><br />
+                            Prodi: Diploma IV di Teknologi Rekayasa Perangkat Lunak <br />
+                            Tahun: 2022 - Sekarang <br />
+                            Semester: 6
+                        </p>
+                        <p>
+                            <span class="highlight">SMK Negeri Ihya Ulumudin Singojuruh</span><br />
+                            Jurusan: Teknik Komputer dan Jaringan <br />
+                            Tahun: 2019 - 2022 <br />
+                        </p>
+                    </div>
+                    <div id="coursePanel" role="tabpanel" aria-labelledby="edu-course-tab" tabindex="0" hidden>
+                        <p><strong>Coding Camp powered by DBS Foundation | Magang</strong></p>
+                        <ul>
+                            <li><strong>Deskripsi Proyek:</strong> Website ini membangun sistem manajemen hotel berbasis
+                                web. Tujuannya untuk mempermudah pencatatan tamu, booking kamar, housekeeping, dan
+                                laporan pembayaran. Saya menggunakan Laravel, MySQL, dan Tailwind untuk merancang
+                                antarmuka yang simpel dan backend yang stabil. Proyek ini memperkuat pemahaman saya
+                                dalam membangun sistem real-time dengan alur operasional nyata.</li>
+                            <li><strong>Pengalaman Pembelajaran (DBS Foundation - Dicoding Program):</strong>
+                                <ul>
+                                    <li><strong>Front-End Development:</strong>
+                                        <ul>
+                                            <li>Memahami dasar pemrograman web (HTML, CSS) dan membuat layout responsif
+                                            </li>
+                                            <li>Memperkuat fondasi JavaScript untuk manipulasi DOM dan interaktivitas
+                                            </li>
+                                            <li>Menerapkan teknik front-end modern untuk pengalaman pengguna optimal
+                                            </li>
+                                            <li>Membangun aplikasi web interaktif dengan pendekatan berbasis komponen
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Back-End Development:</strong>
+                                        <ul>
+                                            <li>Mengembangkan RESTful API menggunakan Node.js dan Express</li>
+                                            <li>Menerapkan manajemen database dan autentikasi pengguna</li>
+                                            <li>Memahami arsitektur server dan praktik keamanan web</li>
+                                        </ul>
+                                    </li>
+                                    <li>Program ini meningkatkan kemampuan teknis saya dalam membangun aplikasi web
+                                        menyeluruh dari sisi klien hingga server, serta memperkuat kemampuan problem
+                                        solving untuk tantangan industri teknologi modern.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Tahun:</strong> 2024 - 2025</li>
+                        </ul>
+
+
+                        <p><strong>Project Based Learning - POLIWANGI | Website Management Hotel Poliwangi</strong></p>
+                        <ul>
+                            <li><strong>Deskripsi:</strong> Website ini membangun sistem manajemen hotel berbasis web.
+                                Tujuannya untuk mempermudah pencatatan tamu, booking kamar, housekeeping, dan laporan
+                                pembayaran. Saya menggunakan Laravel, MySQL, dan Tailwind untuk merancang antarmuka yang
+                                simpel dan backend yang stabil. Proyek ini memperkuat pemahaman saya dalam membangun
+                                sistem real-time dengan alur operasional nyata.</li>
+                            <li><strong>Tahun:</strong> 2024 - 2025</li>
+                        </ul>
+
+                        <p><strong>Project Based Learning - POLIWANGI | Website dan Aplikasi Manajemen UKM
+                                OLAHRAGA</strong></p>
+                        <ul>
+                            <li><strong>Deskripsi:</strong> Proyek ini bertujuan untuk menggantikan sistem pendaftaran
+                                manual yang sebelumnya digunakan, dengan sebuah aplikasi yang lebih efisien, modern, dan
+                                mudah diakses. Dalam tim, saya berperan sebagai developer yang terlibat dalam proses
+                                perancangan fitur, pengembangan backend menggunakan PHP dan Laravel, serta pengelolaan
+                                data dengan MySQL.</li>
+                            <li><strong>Tahun:</strong> 2023 - 2024</li>
+                        </ul>
+
+                        <p><strong>Project Based Learning - POLIWANGI | Website Perpustakaan SD Negeri 3
+                                Tamansuruh</strong></p>
+                        <ul>
+                            <li><strong>Deskripsi:</strong> Pembuatan website perpustakaan untuk SDN 3 Tamansuruh guna
+                                mempermudah pengelolaan dan peminjaman buku. Website ini dibuat menggunakan HTML, CSS,
+                                dan JavaScript, dengan fitur seperti katalog buku, peminjaman online, dan halaman admin
+                                sederhana. Proyek ini melatih saya dalam membangun antarmuka yang mudah dipahami oleh
+                                guru dan siswa.</li>
+                            <li><strong>Tahun:</strong> 2022 - 2023</li>
+                        </ul>
+                    </div>
+
+                    <div id="expPanel" role="tabpanel" aria-labelledby="edu-exp-tab" tabindex="0" hidden>
+                        <p><strong>Anggota | UKM Robotika</strong></p>
+                        <ul>
+                            <li><strong>Pelatihan dan Workshop:</strong> Secara rutin mengikuti sesi workshop dan
+                                pelatihan teknis seputar elektronika, pemrograman, dan mekanika robotik untuk
+                                mengembangkan keterampilan.</li>
+                            <li><strong>Sharing Pengetahuan:</strong> Aktif dalam diskusi dan sesi berbagi antar anggota
+                                untuk memperluas wawasan dan pemahaman tentang teknologi robotika.</li>
+                            <li><strong>Institut:</strong> Politeknik Negeri Banyuwangi</li>
+                            <li><strong>Tahun:</strong> 2022 - 2023</li>
+                        </ul>
+                    </div>
+                    <div id="detailsPanel" role="tabpanel" aria-labelledby="edu-details-tab" tabindex="0" hidden>
+                        <p><strong>Belajar Back-End Pemula dengan JavaScript</strong></p>
+                        <ul>
+                            <li><strong>Link: </strong><a href="https://www.dicoding.com/certificates/MEPJQ721WX3V"
+                                    target="_blank" rel="noopener noreferrer">Lihat Sertifikat</a></li>
+                        </ul>
+
+                        <p><strong>Belajar Pengembangan Web Intermediate</strong></p>
+                        <ul>
+                            <li><strong>Link: </strong><a href="https://www.dicoding.com/certificates/6RPNRLDJ8X2M"
+                                    target="_blank" rel="noopener noreferrer">Lihat Sertifikat</a></li>
+                        </ul>
+
+                        <p><strong>Belajar Fundamental Front-End Web Development</strong></p>
+                        <ul>
+                            <li><strong>Link: </strong><a href="https://www.dicoding.com/certificates/N9ZO9R7JRXG5"
+                                    target="_blank" rel="noopener noreferrer">Lihat Sertifikat</a></li>
+                        </ul>
+
+                        <p><strong>Belajar Dasar Pemrograman JavaScript</strong></p>
+                        <ul>
+                            <li><strong>Link: </strong><a href="https://www.dicoding.com/certificates/2VX3KV6R3XYQ"
+                                    target="_blank" rel="noopener noreferrer">Lihat Sertifikat</a></li>
+                        </ul>
+
+                        <p><strong>Belajar Membuat Front-End Web untuk Pemula</strong></p>
+                        <ul>
+                            <li><strong>Link: </strong><a href="https://www.dicoding.com/certificates/MEPJQWKR4X3V"
+                                    target="_blank" rel="noopener noreferrer">Lihat Sertifikat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <div class="skill-list">
+            <!-- HTML5 -->
+            <div class="skill-card" style="--skill-percent: 90%">
+                <div class="skill-icon" aria-hidden="true">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="HTML5 Icon" style="width: 28px; height: 28px" />
+                </div>
+                <div class="skill-info">
+                    <p class="skill-name">HTML - 5</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="skill-card" style="--skill-percent: 80%">
+                <div class="skill-icon" aria-hidden="true">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Icon"
+                        style="width: 28px; height: 28px" />
+                </div>
+                <div class="skill-info">
+                    <p class="skill-name">CSS - 3</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tailwind CSS -->
+            <div class="skill-card" style="--skill-percent: 80%">
+                <div class="skill-icon" aria-hidden="true">
+                    <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS Icon"
+                        style="width: 28px; height: 28px" />
+                </div>
+                <div class="skill-info">
+                    <p class="skill-name">Tailwind CSS</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card" style="--skill-percent: 60%">
+                <div class="skill-icon" aria-hidden="true">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript Icon" style="width: 28px; height: 28px" />
+                </div>
+                <div class="skill-info">
+                    <p class="skill-name">JavaScript</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="skill-card" style="--skill-percent: 60%">
+                <div class="skill-icon" aria-hidden="true">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        alt="Bootstrap Icon" style="width: 28px; height: 28px" />
+                </div>
+                <div class="skill-info">
+                    <p class="skill-name">Bootstrap</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Figma -->
+            <div class="skill-card" style="--skill-percent: 90%">
+                <div class="skill-icon" aria-hidden="true">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                        alt="Figma Icon" style="width: 28px; height: 28px" />
+                </div>
+                <div class="skill-info">
+                    <p class="skill-name">Figma</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adobe Photoshop -->
+            <div class="skill-card" style="--skill-percent: 60%">
+                <div class="skill-icon" aria-hidden="true">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                        alt="Photoshop Icon" style="width: 28px; height: 28px" />
+                </div>
+                <div class="skill-info">
+                    <p class="skill-name">Adobe Photoshop</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adobe Illustrator -->
+            <div class="skill-card" style="--skill-percent: 70%">
+                <div class="skill-icon" aria-hidden="true">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                        alt="Illustrator Icon" style="width: 28px; height: 28px" />
+                </div>
+                <div class="skill-info">
+                    <p class="skill-name">Adobe Illustrator</p>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title">My <span class="highlight">Services</span></h2>
+        <div class="service-cards">
+            <div class="card" aria-label="Web Design Service Card">
+                <span class="material-icons" aria-hidden="true">public</span>
+                <h5>Web Design</h5>
+                <p>
+                    Saya menawarkan layanan desain antarmuka website yang menarik, modern, dan responsif. Dengan
+                    pengalaman mendesain serta pengembangan menggunakan Laravel, saya
+                    siap membantu mewujudkan tampilan website yang sesuai dengan kebutuhan personal, bisnis, maupun
+                    proyek lainnya. Desain yang saya buat tidak hanya fokus pada estetika, tetapi juga pada kenyamanan
+                    pengguna dan fungsionalitas.
+                </p>
+                <button type="button" aria-label="Hire me for Web Design">Hire Me</button>
+            </div>
+            <div class="card" aria-label="Web Development Service Card">
+                <span class="material-icons" aria-hidden="true">code</span>
+                <h5>Web Development</h5>
+                <p>
+                    Saya menyediakan layanan pengembangan website yang fungsional dan efisien menggunakan teknologi
+                    seperti HTML, CSS, JavaScript, Tailwind, Bootstrap, serta Laravel. Saya berpengalaman dalam
+                    membangun berbagai jenis website mulai dari tampilan (frontend) hingga proses dinamis (backend).
+                    Proyek yang saya kerjakan difokuskan pada performa, responsivitas, dan pengalaman pengguna yang
+                    optimal. Dengan pengalaman kerja tim melalui program Project Based Learning (PBL), saya terbiasa
+                    mengelola pengembangan aplikasi dari tahap perancangan hingga penyelesaian.
+                </p>
+                <button type="button" aria-label="Hire me for Web Development">Hire Me</button>
+            </div>
+            <div class="card" aria-label="Graphic Design Service Card">
+                <span class="material-icons" aria-hidden="true">palette</span>
+                <h5>Graphic Design</h5>
+                <p>
+                    Saya juga menawarkan layanan desain grafis untuk kebutuhan visual digital maupun cetak. Mulai dari
+                    desain logo, banner, poster, hingga elemen antarmuka website, semua dirancang dengan memperhatikan
+                    estetika, konsistensi brand, dan kemudahan pengguna. Dengan pengalaman dalam mendesain berbagai
+                    template website, saya memahami pentingnya visual yang menarik untuk menunjang tampilan dan
+                    fungsionalitas suatu produk digital.
+                </p>
+                <button type="button" aria-label="Hire me for Graphic Design">Hire Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2 class="section-title">My <span class="highlight">Portfolio</span></h2>
+        <nav class="portfolio-nav" aria-label="Portfolio categories">
+            <button class="active" type="button" data-category="webdesign" aria-pressed="true">Website UKM
+                Olahraga</button>
+            <button type="button" data-category="webdev" aria-pressed="false">Website Management Hotel</button>
+            <button type="button" data-category="webperpus" aria-pressed="false">Website Perpustakaan</button>
+        </nav>
+        <div class="gallery" aria-live="polite" aria-atomic="true">
+            <!-- Web Design Items -->
+            <article class="gallery-item" data-category="webdesign" tabindex="0"
+                aria-label="Web Design workspace computer photo">
+                <img src="./img/website ukm olahraga/Dashboard.png" alt="Workspace with computer and design tools" />
+                <div class="gallery-item-overlay">Website UKM Olahraga</div>
+            </article>
+            <article class="gallery-item" data-category="webdesign" tabindex="0"
+                aria-label="Desktop with dual monitors and coding environment">
+                <img src="./img/website ukm olahraga/Dashboard-1.png" alt="Dual monitor coding setup" />
+                <div class="gallery-item-overlay">Website UKM Olahraga</div>
+            </article>
+
+            <!-- Web Development Items -->
+            <article class="gallery-item" data-category="webdev" tabindex="0"
+                aria-label="Mechanical keyboard and mouse setup">
+                <img src="./img/Website hotel/Dashboard.png" alt="Mechanical keyboard and mouse on desk" />
+                <div class="gallery-item-overlay">Website Management Hotel</div>
+            </article>
+            <article class="gallery-item" data-category="webdev" tabindex="0"
+                aria-label="PC gaming keyboard with LED backlighting">
+                <img src="./img/Website hotel/MyProfile.png" alt="Gaming keyboard with LED lights" />
+                <div class="gallery-item-overlay">Website Management Hotel</div>
+            </article>
+
+            <!-- Website Perpustakaan -->
+            <article class="gallery-item" data-category="webperpus" tabindex="0"
+                aria-label="Mechanical keyboard and mouse setup">
+                <img src="./img/Website sdn 3 taman suruh/Dasboard.png" alt="Mechanical keyboard and mouse on desk" />
+                <div class="gallery-item-overlay">Website PerpustakaaWebsite Management Hotel</div>
+            </article>
+            <article class="gallery-item" data-category="webperpus" tabindex="0"
+                aria-label="PC gaming keyboard with LED backlighting">
+                <img src="./img/Website sdn 3 taman suruh/Tambah Buku.png" alt="Gaming keyboard with LED lights" />
+                <div class="gallery-item-overlay">Website Perpustakaan</div>
+            </article>
+            <article class="gallery-item" data-category="webperpus" tabindex="0"
+                aria-label="PC gaming keyboard with LED backlighting">
+                <img src="./img/Website sdn 3 taman suruh/Data Buku.png" alt="Gaming keyboard with LED lights" />
+                <div class="gallery-item-overlay">Website Perpustakaan</div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+        <div class="contact-wrapper">
+            <aside class="contact-info" aria-label="Contact Info">
+                <h3 class="logo-text"><img src="./img/Techdesain 2.png" alt="TechDesain" class="logo-img">
+                    TechDesain</h3>
+                <p>
+                    Saya adalah seorang Frontend Developer dengan pengalaman dalam mendesain berbagai template website
+                    serta mengembangkan website menggunakan Laravel. Saya juga memiliki pengalaman bekerja dalam tim
+                    melalui program Project Based Learning (PBL), di mana saya terlibat langsung dalam proses
+                    perancangan, pengembangan, hingga presentasi aplikasi di setiap akhir semester.
+                </p>
+                <div class="mt-4 d-flex gap-3 social-icons">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/moh-kosim-2064892b7/" target="_blank" aria-label="LinkedIn"
+                        class="text-decoration-none fs-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <!-- Gmail -->
+                    <a href="mailto:mohkosim8014@gmail.com" aria-label="Email" class="text-decoration-none fs-4">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/Mohkosim" target="_blank" aria-label="GitHub"
+                        class="text-decoration-none fs-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </aside>
+            <form id="contactForm" aria-label="Contact Form" novalidate>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name"
+                        aria-label="First name" required />
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" aria-label="Last name"
+                        required />
+                </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone" aria-label="Phone number" />
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email address"
+                        required />
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject" aria-label="Subject" />
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" placeholder="Message" rows="4" aria-label="Message"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom btn-download"
+                    aria-label="Submit Contact Form">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p> &copy; 2024 All Rights Reserved by RIEAD.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+        <span class="material-icons" aria-hidden="true">arrow_upward</span>
+    </button>
+
+    <!-- Bootstrap Bundle JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
